@@ -1,0 +1,22 @@
+[
+  {
+    "city": "Yogyakarta",  
+    "address" : "Jl. Ipda Tut Harsono No. 32 Timoho, Yogyakarta"
+  },
+  {
+    "city": "Malang",  
+    "address" : "Ruko Tlogomas Square Kav.3 &4 Jl. Raya Tlogomas 23 Malang, Jawa Timur"
+  },
+  {
+    "city": "Solo",  
+    "address" : "Jl.Ir Juanda No.45 Jebres Surakarta, Jawa Tengah"
+  },
+  {
+    "city": "Jember",  
+    "address" : "Jl. Karimata No.1A Sumbersari Jember, Jawa Timur"
+  },
+  {
+    "city": "Surabaya",  
+    "address" : "Perum Surya Inti Permata Juanda, Blk. C No.26, Dukuh, Sedati Agung, Kec. Sedati, Kabupaten Sidoarjo, Jawa Timur"
+  }
+]
