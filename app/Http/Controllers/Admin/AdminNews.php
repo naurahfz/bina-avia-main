@@ -75,7 +75,7 @@ class AdminNews extends Controller
 
                 // Delete old image
                 $img_path = public_path().'/assets/img/news/'.$news->image;
-                unlink($img_path);         // Delete image
+                if(file_exists($img_path)){unlink($img_path);}
                 
                 // Upload new image
                 $validatedData['image'] = time().".png";
@@ -101,11 +101,14 @@ class AdminNews extends Controller
 
         //Check if the news is found
         if($news){
+            
             // Delete image
             $img_path = public_path().'/assets/img/news/'.$news->image;
-            unlink($img_path);         // Delete image
+            if(file_exists($img_path)){unlink($img_path);}
+            
             // Delete news
-            News::destroy($request->id);    // Delete news
+            News::destroy($request->id);
+            
             return ['status'=>'success','message'=>'Berita berhasil dihapus'];
         }else{
             return ['status'=>'error','message'=>'Berita tidak ditemukan'];
