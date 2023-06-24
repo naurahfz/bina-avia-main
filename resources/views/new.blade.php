@@ -6,6 +6,10 @@
 
 @section('content')
 
+<style>
+  #new-body p {text-align: justify}
+</style>
+
 <section id="team" class="team">
   <div class="container">
 
@@ -20,7 +24,9 @@
       <div class="col-12 col-md-9">
         <img src="/assets/img/news/{{ $new->image }}" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover">
         <br><br>
-        <p style="text-align: justify">{{ $new->body }}</p>
+        <div id="new-body">
+          {!! Illuminate\Support\Str::markdown($new->body) !!}
+        </div>
       </div>
       <div class="col-12 col-md-3">
 
