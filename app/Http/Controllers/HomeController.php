@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
+use App\Models\Branch;
 use App\Models\Gallery;
 use App\Models\News;
 use App\Models\Testimonial;
@@ -14,6 +15,7 @@ class HomeController extends Controller
     
     public function index(){
         return view('home',[
+            "branchs" => Branch::all(),
             "news" => News::orderBy('created_at', 'DESC')->take(3)->get(),
             "title" => "Bina Avia Persada | Beranda",
             "testimonials" => Testimonial::all(),

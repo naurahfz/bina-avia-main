@@ -22,12 +22,12 @@
               <span class="menu-title">Galeri</span>
             </a>
           </li>
-          {{-- <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="/admin/branch">
               <i class="mdi mdi-office-building menu-icon"></i>
               <span class="menu-title">Kantor cabang</span>
             </a>
-          </li> --}}
+          </li>
           {{-- <li class="nav-item">
             <a class="nav-link" href="/admin/training">
               <i class="mdi mdi-shield-airplane menu-icon"></i>

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\ApiFormatter;
-//use App\Models\Branch;
+use App\Models\Branch;
 use App\Models\Gallery;
 use App\Models\News;
 use App\Models\Testimonial;
@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Auth;
 
 class APIController extends Controller
 {
-  // public function Branch(Branch $branch){  
-  //   return ApiFormatter::createApi(200,"Success",$branch);
-  // }  
+  public function Branch(Branch $branch){  
+    return ApiFormatter::createApi(200,"Success",$branch);
+  }  
   public function Gallery(Gallery $gallery){  
     return ApiFormatter::createApi(200,"Success",$gallery);
   }  
